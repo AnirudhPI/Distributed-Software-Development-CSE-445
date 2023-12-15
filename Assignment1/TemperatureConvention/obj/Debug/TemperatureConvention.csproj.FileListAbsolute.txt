@@ -1,0 +1,7 @@
+C:\Users\aniru\DSD\Assignment1\TemperatureConvention\bin\TemperatureConvention.dll.config
+C:\Users\aniru\DSD\Assignment1\TemperatureConvention\bin\TemperatureConvention.dll
+C:\Users\aniru\DSD\Assignment1\TemperatureConvention\bin\TemperatureConvention.pdb
+C:\Users\aniru\DSD\Assignment1\TemperatureConvention\obj\Debug\TemperatureConvention.csproj.AssemblyReference.cache
+C:\Users\aniru\DSD\Assignment1\TemperatureConvention\obj\Debug\TemperatureConvention.csproj.CoreCompileInputs.cache
+C:\Users\aniru\DSD\Assignment1\TemperatureConvention\obj\Debug\TemperatureConvention.dll
+C:\Users\aniru\DSD\Assignment1\TemperatureConvention\obj\Debug\TemperatureConvention.pdb

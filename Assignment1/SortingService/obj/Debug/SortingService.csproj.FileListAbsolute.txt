@@ -1,0 +1,7 @@
+C:\Users\aniru\DSD\Assignment1\SortingService\bin\SortingService.dll.config
+C:\Users\aniru\DSD\Assignment1\SortingService\bin\SortingService.dll
+C:\Users\aniru\DSD\Assignment1\SortingService\bin\SortingService.pdb
+C:\Users\aniru\DSD\Assignment1\SortingService\obj\Debug\SortingService.csproj.AssemblyReference.cache
+C:\Users\aniru\DSD\Assignment1\SortingService\obj\Debug\SortingService.csproj.CoreCompileInputs.cache
+C:\Users\aniru\DSD\Assignment1\SortingService\obj\Debug\SortingService.dll
+C:\Users\aniru\DSD\Assignment1\SortingService\obj\Debug\SortingService.pdb
