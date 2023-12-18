@@ -1,0 +1,10 @@
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\obj\Debug\SolarEnergy.csproj.AssemblyReference.cache
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\obj\Debug\SolarEnergy.csproj.CoreCompileInputs.cache
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\bin\SolarEnergy.dll.config
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\bin\SolarEnergy.dll
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\bin\SolarEnergy.pdb
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\bin\Newtonsoft.Json.dll
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\bin\Newtonsoft.Json.xml
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\obj\Debug\SolarEnergy.csproj.CopyComplete
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\obj\Debug\SolarEnergy.dll
+C:\Users\aniru\DSD\Assignment3\SolarEnergy\obj\Debug\SolarEnergy.pdb

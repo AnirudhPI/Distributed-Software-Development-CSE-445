@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SolarEnergy" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SolarEnergy" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:58263/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="SolarEnergyData">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="errors" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="inputs" nillable="true" type="tns:Inputs" />
+      <xs:element minOccurs="0" name="metadata" nillable="true" type="tns:Metadata" />
+      <xs:element minOccurs="0" name="outputs" nillable="true" type="tns:Outputs" />
+      <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="warnings" nillable="true" type="q2:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SolarEnergyData" nillable="true" type="tns:SolarEnergyData" />
+  <xs:complexType name="Inputs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="lat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lon" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Inputs" nillable="true" type="tns:Inputs" />
+  <xs:complexType name="Metadata">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sources" nillable="true" type="q3:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Metadata" nillable="true" type="tns:Metadata" />
+  <xs:complexType name="Outputs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="avg_dni" nillable="true" type="tns:AvgDni" />
+      <xs:element minOccurs="0" name="avg_ghi" nillable="true" type="tns:AvgGhi" />
+      <xs:element minOccurs="0" name="avg_lat_tilt" nillable="true" type="tns:AvgLatTilt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Outputs" nillable="true" type="tns:Outputs" />
+  <xs:complexType name="AvgDni">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="annual" type="xs:double" />
+      <xs:element minOccurs="0" name="monthly" nillable="true" type="tns:Monthly" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AvgDni" nillable="true" type="tns:AvgDni" />
+  <xs:complexType name="Monthly">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apr" type="xs:double" />
+      <xs:element minOccurs="0" name="aug" type="xs:double" />
+      <xs:element minOccurs="0" name="dec" type="xs:double" />
+      <xs:element minOccurs="0" name="feb" type="xs:double" />
+      <xs:element minOccurs="0" name="jan" type="xs:double" />
+      <xs:element minOccurs="0" name="jul" type="xs:double" />
+      <xs:element minOccurs="0" name="jun" type="xs:double" />
+      <xs:element minOccurs="0" name="mar" type="xs:double" />
+      <xs:element minOccurs="0" name="may" type="xs:double" />
+      <xs:element minOccurs="0" name="nov" type="xs:double" />
+      <xs:element minOccurs="0" name="oct" type="xs:double" />
+      <xs:element minOccurs="0" name="sep" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Monthly" nillable="true" type="tns:Monthly" />
+  <xs:complexType name="AvgGhi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="annual" type="xs:double" />
+      <xs:element minOccurs="0" name="monthly" nillable="true" type="tns:Monthly" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AvgGhi" nillable="true" type="tns:AvgGhi" />
+  <xs:complexType name="AvgLatTilt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="annual" type="xs:double" />
+      <xs:element minOccurs="0" name="monthly" nillable="true" type="tns:Monthly" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AvgLatTilt" nillable="true" type="tns:AvgLatTilt" />
+</xs:schema>

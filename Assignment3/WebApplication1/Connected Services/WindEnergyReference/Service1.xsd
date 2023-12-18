@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WindEnergy" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WindEnergy" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56603/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="WindEnergyData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="geometry" nillable="true" type="tns:Geometry" />
+      <xs:element minOccurs="0" name="header" nillable="true" type="tns:Header" />
+      <xs:element minOccurs="0" name="messages" nillable="true" type="tns:ArrayOfMessages" />
+      <xs:element minOccurs="0" name="parameters" nillable="true" type="tns:Parameters" />
+      <xs:element minOccurs="0" name="properties" nillable="true" type="tns:Properties" />
+      <xs:element minOccurs="0" name="times" nillable="true" type="tns:Times" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WindEnergyData" nillable="true" type="tns:WindEnergyData" />
+  <xs:complexType name="Geometry">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="coordinates" nillable="true" type="q1:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Geometry" nillable="true" type="tns:Geometry" />
+  <xs:complexType name="Header">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="api" nillable="true" type="tns:Api" />
+      <xs:element minOccurs="0" name="fill_value" type="xs:double" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sources" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Header" nillable="true" type="tns:Header" />
+  <xs:complexType name="Api">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Api" nillable="true" type="tns:Api" />
+  <xs:complexType name="ArrayOfMessages">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Messages" nillable="true" type="tns:Messages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessages" nillable="true" type="tns:ArrayOfMessages" />
+  <xs:complexType name="Messages">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="DIRECTION" nillable="true" type="tns:DIRECTION" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Messages" nillable="true" type="tns:Messages" />
+  <xs:complexType name="CLASSES">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASS_1" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_10" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_2" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_3" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_4" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_5" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_6" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_7" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_8" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_9" type="xs:double" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WR10M" nillable="true" type="tns:WR10M" />
+      <xs:element minOccurs="0" name="WR50M" nillable="true" type="tns:WR50M" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CLASSES" nillable="true" type="tns:CLASSES" />
+  <xs:complexType name="WR10M">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ALL" nillable="true" type="tns:ALL" />
+      <xs:element minOccurs="0" name="CLASS_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_1125" nillable="true" type="tns:_1125" />
+      <xs:element minOccurs="0" name="_1350" nillable="true" type="tns:_1350" />
+      <xs:element minOccurs="0" name="_1575" nillable="true" type="tns:_1575" />
+      <xs:element minOccurs="0" name="_1800" nillable="true" type="tns:_1800" />
+      <xs:element minOccurs="0" name="_2025" nillable="true" type="tns:_2025" />
+      <xs:element minOccurs="0" name="_225" nillable="true" type="tns:_225" />
+      <xs:element minOccurs="0" name="_2250" nillable="true" type="tns:_2250" />
+      <xs:element minOccurs="0" name="_2475" nillable="true" type="tns:_2475" />
+      <xs:element minOccurs="0" name="_2700" nillable="true" type="tns:_2700" />
+      <xs:element minOccurs="0" name="_2925" nillable="true" type="tns:_2925" />
+      <xs:element minOccurs="0" name="_3150" nillable="true" type="tns:_3150" />
+      <xs:element minOccurs="0" name="_3375" nillable="true" type="tns:_3375" />
+      <xs:element minOccurs="0" name="_450" nillable="true" type="tns:_450" />
+      <xs:element minOccurs="0" name="_675" nillable="true" type="tns:_675" />
+      <xs:element minOccurs="0" name="_900" nillable="true" type="tns:_900" />
+      <xs:element minOccurs="0" name="_Zero" nillable="true" type="tns:_Zero" />
+      <xs:element minOccurs="0" name="longname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="units" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WR10M" nillable="true" type="tns:WR10M" />
+  <xs:complexType name="ALL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASS_1" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_2" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_3" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_4" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_5" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_6" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_7" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_8" type="xs:double" />
+      <xs:element minOccurs="0" name="CLASS_9" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ALL" nillable="true" type="tns:ALL" />
+  <xs:complexType name="_1125">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_1125" nillable="true" type="tns:_1125" />
+  <xs:complexType name="_1350">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_1350" nillable="true" type="tns:_1350" />
+  <xs:complexType name="_1575">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_1575" nillable="true" type="tns:_1575" />
+  <xs:complexType name="_1800">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_1800" nillable="true" type="tns:_1800" />
+  <xs:complexType name="_2025">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_2025" nillable="true" type="tns:_2025" />
+  <xs:complexType name="_225">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_225" nillable="true" type="tns:_225" />
+  <xs:complexType name="_2250">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_2250" nillable="true" type="tns:_2250" />
+  <xs:complexType name="_2475">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_2475" nillable="true" type="tns:_2475" />
+  <xs:complexType name="_2700">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_2700" nillable="true" type="tns:_2700" />
+  <xs:complexType name="_2925">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_2925" nillable="true" type="tns:_2925" />
+  <xs:complexType name="_3150">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_3150" nillable="true" type="tns:_3150" />
+  <xs:complexType name="_3375">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_3375" nillable="true" type="tns:_3375" />
+  <xs:complexType name="_450">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_450" nillable="true" type="tns:_450" />
+  <xs:complexType name="_675">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_675" nillable="true" type="tns:_675" />
+  <xs:complexType name="_900">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASSES" nillable="true" type="tns:CLASSES" />
+      <xs:element minOccurs="0" name="WD_AVG" type="xs:double" />
+      <xs:element minOccurs="0" name="WD_PCT" type="xs:double" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="range" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="_900" nillable="true" type="tns:_900" />
+  <xs:complexType name="_Zero">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="_Zero" nillable="true" type="tns:_Zero" />
+  <xs:complexType name="WR50M">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ALL" nillable="true" type="tns:ALL" />
+      <xs:element minOccurs="0" name="CLASS_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASS_9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_1125" nillable="true" type="tns:_1125" />
+      <xs:element minOccurs="0" name="_1350" nillable="true" type="tns:_1350" />
+      <xs:element minOccurs="0" name="_1575" nillable="true" type="tns:_1575" />
+      <xs:element minOccurs="0" name="_1800" nillable="true" type="tns:_1800" />
+      <xs:element minOccurs="0" name="_2025" nillable="true" type="tns:_2025" />
+      <xs:element minOccurs="0" name="_225" nillable="true" type="tns:_225" />
+      <xs:element minOccurs="0" name="_2250" nillable="true" type="tns:_2250" />
+      <xs:element minOccurs="0" name="_2475" nillable="true" type="tns:_2475" />
+      <xs:element minOccurs="0" name="_2700" nillable="true" type="tns:_2700" />
+      <xs:element minOccurs="0" name="_2925" nillable="true" type="tns:_2925" />
+      <xs:element minOccurs="0" name="_3150" nillable="true" type="tns:_3150" />
+      <xs:element minOccurs="0" name="_3375" nillable="true" type="tns:_3375" />
+      <xs:element minOccurs="0" name="_450" nillable="true" type="tns:_450" />
+      <xs:element minOccurs="0" name="_675" nillable="true" type="tns:_675" />
+      <xs:element minOccurs="0" name="_900" nillable="true" type="tns:_900" />
+      <xs:element minOccurs="0" name="_Zero" nillable="true" type="tns:_Zero" />
+      <xs:element minOccurs="0" name="longname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="units" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WR50M" nillable="true" type="tns:WR50M" />
+  <xs:complexType name="DIRECTION">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_1125" nillable="true" type="tns:_1125" />
+      <xs:element minOccurs="0" name="_1350" nillable="true" type="tns:_1350" />
+      <xs:element minOccurs="0" name="_1575" nillable="true" type="tns:_1575" />
+      <xs:element minOccurs="0" name="_1800" nillable="true" type="tns:_1800" />
+      <xs:element minOccurs="0" name="_2025" nillable="true" type="tns:_2025" />
+      <xs:element minOccurs="0" name="_225" nillable="true" type="tns:_225" />
+      <xs:element minOccurs="0" name="_2250" nillable="true" type="tns:_2250" />
+      <xs:element minOccurs="0" name="_2475" nillable="true" type="tns:_2475" />
+      <xs:element minOccurs="0" name="_2700" nillable="true" type="tns:_2700" />
+      <xs:element minOccurs="0" name="_2925" nillable="true" type="tns:_2925" />
+      <xs:element minOccurs="0" name="_3150" nillable="true" type="tns:_3150" />
+      <xs:element minOccurs="0" name="_3375" nillable="true" type="tns:_3375" />
+      <xs:element minOccurs="0" name="_450" nillable="true" type="tns:_450" />
+      <xs:element minOccurs="0" name="_675" nillable="true" type="tns:_675" />
+      <xs:element minOccurs="0" name="_900" nillable="true" type="tns:_900" />
+      <xs:element minOccurs="0" name="_Zero" nillable="true" type="tns:_Zero" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DIRECTION" nillable="true" type="tns:DIRECTION" />
+  <xs:complexType name="Parameters">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WD_AVG" nillable="true" type="tns:WDAVG" />
+      <xs:element minOccurs="0" name="WD_PCT" nillable="true" type="tns:WDPCT" />
+      <xs:element minOccurs="0" name="WR10M" nillable="true" type="tns:WR10M" />
+      <xs:element minOccurs="0" name="WR50M" nillable="true" type="tns:WR50M" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Parameters" nillable="true" type="tns:Parameters" />
+  <xs:complexType name="WDAVG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="longname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="units" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WDAVG" nillable="true" type="tns:WDAVG" />
+  <xs:complexType name="WDPCT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="longname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="units" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WDPCT" nillable="true" type="tns:WDPCT" />
+  <xs:complexType name="Properties">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="parameter" nillable="true" type="tns:Parameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Properties" nillable="true" type="tns:Properties" />
+  <xs:complexType name="Parameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WR10M" nillable="true" type="tns:WR10M" />
+      <xs:element minOccurs="0" name="WR50M" nillable="true" type="tns:WR50M" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Parameter" nillable="true" type="tns:Parameter" />
+  <xs:complexType name="Times">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" type="xs:double" />
+      <xs:element minOccurs="0" name="process" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Times" nillable="true" type="tns:Times" />
+</xs:schema>
