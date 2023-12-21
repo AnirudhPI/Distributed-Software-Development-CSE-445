@@ -1,0 +1,10 @@
+C:\Users\aniru\DSD\Assignment4\Recipes\obj\Debug\Recipes.csproj.AssemblyReference.cache
+C:\Users\aniru\DSD\Assignment4\Recipes\obj\Debug\Recipes.csproj.CoreCompileInputs.cache
+C:\Users\aniru\DSD\Assignment4\Recipes\bin\Recipes.dll.config
+C:\Users\aniru\DSD\Assignment4\Recipes\bin\Recipes.dll
+C:\Users\aniru\DSD\Assignment4\Recipes\bin\Recipes.pdb
+C:\Users\aniru\DSD\Assignment4\Recipes\bin\Newtonsoft.Json.dll
+C:\Users\aniru\DSD\Assignment4\Recipes\bin\Newtonsoft.Json.xml
+C:\Users\aniru\DSD\Assignment4\Recipes\obj\Debug\Recipes.csproj.CopyComplete
+C:\Users\aniru\DSD\Assignment4\Recipes\obj\Debug\Recipes.dll
+C:\Users\aniru\DSD\Assignment4\Recipes\obj\Debug\Recipes.pdb

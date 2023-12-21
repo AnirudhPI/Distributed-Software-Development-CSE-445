@@ -1,0 +1,10 @@
+C:\Users\aniru\DSD\Assignment4\Assignment4\bin\Assignment4.dll.config
+C:\Users\aniru\DSD\Assignment4\Assignment4\bin\Assignment4.dll
+C:\Users\aniru\DSD\Assignment4\Assignment4\bin\Assignment4.pdb
+C:\Users\aniru\DSD\Assignment4\Assignment4\bin\Newtonsoft.Json.dll
+C:\Users\aniru\DSD\Assignment4\Assignment4\bin\Newtonsoft.Json.xml
+C:\Users\aniru\DSD\Assignment4\Assignment4\obj\Debug\GetPlaceInformation.csproj.AssemblyReference.cache
+C:\Users\aniru\DSD\Assignment4\Assignment4\obj\Debug\GetPlaceInformation.csproj.CoreCompileInputs.cache
+C:\Users\aniru\DSD\Assignment4\Assignment4\obj\Debug\GetPlaceInformation.csproj.CopyComplete
+C:\Users\aniru\DSD\Assignment4\Assignment4\obj\Debug\Assignment4.dll
+C:\Users\aniru\DSD\Assignment4\Assignment4\obj\Debug\Assignment4.pdb
