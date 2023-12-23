@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Parks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<Park type="National">
+		<Owner>National Park Service</Owner>
+		<Name>Yellowstone National Park</Name>
+		<Reservation>
+			<Address>123 Park Road</Address>
+			<Url>http://www.yellowstone.com</Url>
+		</Reservation>
+		<NeighboringStates>
+			<State>Montana</State>
+			<State>Idaho</State>
+			<State>Wyoming</State>
+		</NeighboringStates>
+		<Established Founder="John Doe">1872</Established>
+	</Park>
+	<Park type="State">
+		<Owner>State Park Authority</Owner>
+		<Name>State Park 1</Name>
+		<Reservation>
+			<Address>456 State Park Lane</Address>
+			<Url>http://www.statepark1.com</Url>
+		</Reservation>
+		<Established Founder="Jane Smith">1995</Established>
+	</Park>
+	<Park type="National">
+		<Owner>National Park Service</Owner>
+		<Name>Grand Canyon National Park</Name>
+		<Reservation>
+			<Address>789 Canyon View</Address>
+			<Url>http://www.grandcanyon.com</Url>
+		</Reservation>
+		<NeighboringStates>
+			<State>Arizona</State>
+		</NeighboringStates>
+		<Established Founder="Alice Johnson">1919</Established>
+	</Park>
+	<Park type="State">
+		<Owner>State Park Authority</Owner>
+		<Name>State Park 2</Name>
+		<Reservation>
+			<Address>789 State Park Avenue</Address>
+			<Url>http://www.statepark2.com</Url>
+		</Reservation>
+		<Established Founder="Bob Wilson">2002</Established>
+	</Park>
+	<Park type="National">
+		<Owner>National Park Service</Owner>
+		<Name>Yosemite National Park</Name>
+		<Reservation>
+			<Address>567 Yosemite Lane</Address>
+			<Url>http://www.yosemite.com</Url>
+		</Reservation>
+		<NeighboringStates>
+			<State>California</State>
+		</NeighboringStates>
+		<Established Founder="Eve Adams">1890</Established>
+	</Park>
+	<Park type="State">
+		<Owner>State Park Authority</Owner>
+		<Name>State Park 3</Name>
+		<Reservation>
+			<Address>234 Park Avenue</Address>
+			<Url>http://www.statepark3.com</Url>
+		</Reservation>
+		<Established Founder="David Clark">2005</Established>
+	</Park>
+	<Park type="National">
+		<Owner>National Park Service</Owner>
+		<Name>Zion National Park</Name>
+		<Reservation>
+			<Address>345 Canyon Road</Address>
+			<Url>http://www.zion.com</Url>
+		</Reservation>
+		<NeighboringStates>
+			<State>Utah</State>
+		</NeighboringStates>
+		<Established Founder="Frank Brown">1919</Established>
+	</Park>
+	<Park type="State">
+		<Owner>State Park Authority</Owner>
+		<Name>State Park 4</Name>
+		<Reservation>
+			<Address>123 State Park Lane</Address>
+			<Url>http://www.statepark4.com</Url>
+		</Reservation>
+		<Established Founder="Grace Davis">1998</Established>
+	</Park>
+	<Park type="National">
+		<Owner>National Park Service</Owner>
+		<Name>Acadia National Park</Name>
+		<Reservation>
+			<Address>456 Ocean View</Address>
+			<Url>http://www.acadia.com</Url>
+		</Reservation>
+		<NeighboringStates>
+			<State>Maine</State>
+		</NeighboringStates>
+		<Established Founder="Henry Evans">1916</Established>
+	</Park>
+	<Park type="State">
+		<Owner>State Park Authority</Owner>
+		<Name>State Park 5</Name>
+		<Reservation>
+			<Address>789 State Park Road</Address>
+			<Url>http://www.statepark5.com</Url>
+		</Reservation>
+		<Established Founder="Ivy Foster">2003</Established>
+	</Park>
+	<Park type="National">
+		<Owner>National Park Service</Owner>
+		<Name>Glacier National Park</Name>
+		<Reservation>
+			<Address>234 Glacier Lane</Address>
+			<Url>http://www.glacier.com</Url>
+		</Reservation>
+		<NeighboringStates>
+			<State>Montana</State>
+			<State>Idaho</State>
+		</NeighboringStates>
+		<Established Founder="Jack Green">1910</Established>
+	</Park>
+	<Park type="State">
+		<Owner>State Park Authority</Owner>
+		<Name>State Park 6</Name>
+		<Reservation>
+			<Address>567 Park Avenue</Address>
+			<Url>http://www.statepark6.com</Url>
+		</Reservation>
+		<Established Founder="Kelly Harris">2001</Established>
+	</Park>
+</Parks>
